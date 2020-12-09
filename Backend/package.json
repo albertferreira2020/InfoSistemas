@@ -1,0 +1,17 @@
+{
+  "name": "projectinfosistemas",
+  "version": "1.0.0",
+  "description": "Projeto experimental",
+  "scripts": {
+    "start": "json-server --watch veiculos.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ProjectInfoSistemas"
+  },
+  "author": "Albert Ferreira",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

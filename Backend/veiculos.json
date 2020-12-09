@@ -1,0 +1,23 @@
+{
+    "veiculos":[
+        {
+            "id":1,
+            "placa":"UNO4567",
+            "chassi":"CHSS0984309820980",
+            "renavam":"978987987", 
+            "modelo":"UNO SPORT", 
+            "marca":"FIAT", 
+            "ano":2000
+        },
+        {
+            "id":2,
+            "placa":"GHY7890",
+            "chassi":"CHSS0984309865465",
+            "renavam":"65465464", 
+            "modelo":"CIVIC", 
+            "marca":"HONDA", 
+            "ano":2019
+
+        }
+    ]
+}
