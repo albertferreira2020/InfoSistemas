@@ -1,5 +1,44 @@
 <div class='container'>
     <h5>Tabela de Veículos Info Sistemas</h5>
-    <div id="table">tabela crud de veículos</div>
+ 
+    <p>Adicionar veículos</p>
+    <form>
+
+        <label for="placa">Placa:</label><br><input type='text' required name="placa" placeholder="placa" [(ngModel)]="car.placa"><br>
+        <label for="chassi">chassi:</label><br> <input type='text' required name="chassi" placeholder="chassi" [(ngModel)]="car.chassi"><br>
+        <label for="renavam">renavam:</label><br> <input type='text' required name="renavam" placeholder="renavam" [(ngModel)]="car.renavam"><br>
+        <label for="modelo">modelo:</label><br> <input type='text' required name="modelo" placeholder="modelo" [(ngModel)]="car.modelo"><br>
+        <label for="marca">marca:</label><br> <input type='text' required name="marca" placeholder="marca" [(ngModel)]="car.marca"><br>
+        <label for="ano">ano:</label><br> <input type='text' required name="ano" placeholder="ano" [(ngModel)]="car.ano">
+        <br> <br>
+        <button type="button" (click)="cadastrar()">Cadastrar</button>
+
+    </form>
+    <hr>
+    <table class="table">
+        <thead>
+            <th> id </th> 
+                <th>placa</th> 
+                <th>chassi</th> 
+                <th>renavam</th> 
+                <th>modelo</th> 
+                <th>marca </th>
+                <th>ano </th>
+                <th>Update</th>
+                <th>Delete</th>
+        </thead>
+        <tbody *ngFor="let car of cars">
+            <td> {{car.id}} </td> 
+            <td>{{car.placa}}</td> 
+            <td>{{car.chassi}}</td> 
+            <td>{{car.renavam}}</td> 
+            <td>{{car.modelo}}</td> 
+            <td>{{car.marca}} </td>
+            <td>{{car.ano}} </td>
+            <td>{{car.Update}}</td>
+            <td>{{car.Delete}}</td>
+        </tbody>
+    </table>
+
 </div>
  

@@ -1,3 +1,11 @@
 .container{
     margin:20px
 }
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 21px;
+    text-align: center
+  }
+ 
