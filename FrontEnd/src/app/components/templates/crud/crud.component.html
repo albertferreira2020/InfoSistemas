@@ -35,8 +35,8 @@
             <td>{{car.modelo}}</td> 
             <td>{{car.marca}} </td>
             <td>{{car.ano}} </td>
-            <td>{{car.Update}}</td>
-            <td>{{car.Delete}}</td>
+            <td><button type="button" (click)="Atualizar(car.id)">Atualizar</button></td>
+            <td><button type="button" (click)="Excluir(car.id)">Excluir</button></td>
         </tbody>
     </table>
 

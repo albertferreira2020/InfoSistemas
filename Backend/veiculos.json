@@ -19,7 +19,13 @@
       "ano": 2019
     },
     {
-      "id": 3
+      "placa": "OXH3108",
+      "chassi": "asdfasdfasdf5465468",
+      "renavam": "546546546",
+      "modelo": "BMW",
+      "marca": "BMW",
+      "ano": "2000",
+      "id": 4
     }
   ]
 }

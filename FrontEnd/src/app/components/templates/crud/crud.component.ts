@@ -11,7 +11,7 @@ export class CrudComponent implements OnInit {
 
   car: carModel = new carModel();
   cars: Array<any> = new Array();
-  
+
   constructor(private crudservice: CrudService) { }
 
   ngOnInit(): void {
@@ -20,13 +20,35 @@ export class CrudComponent implements OnInit {
 
   cadastrar(){
     console.log(this.car)
-    this.crudservice.cadastrarVeiculo().subscribe(car =>{
+    this.crudservice.cadastrarVeiculo(this.car).subscribe(car =>{
     this.car = new carModel();
     this.listcars();
     },err =>{
       console.log('Error' + err)
     })
   }
+
+
+Excluir(id:number){
+  this.crudservice.ExcluirVeiculo(id).subscribe(car =>{
+    this.car = new carModel();
+    this.listcars();
+    },err =>{
+      console.log('Error' + err)
+    })
+
+}
+
+
+  Atualizar(id:number){
+    this.crudservice.AtualizarVeiculo(id, this.car).subscribe(car =>{
+    this.car = new carModel();
+    this.listcars();
+    },err =>{
+      console.log('Error' + err)
+    })
+  }  
+
 
   listcars(){
     this.crudservice.listcars().subscribe(data =>{
